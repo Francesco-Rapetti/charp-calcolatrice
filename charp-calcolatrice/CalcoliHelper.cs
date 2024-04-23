@@ -63,13 +63,20 @@ namespace charp_calcolatrice
         //public static double Potenza(int a, int b) => Math.Pow(a, b);
         public static double Potenza(int _base, int _esponente)
         {
-            if (_esponente == 0)
+            if (_base == 0 && _esponente < 0)
+            {
+                Console.WriteLine("ERRORE: Potenza di 0 con esponente negativo");
+                return 1;
+            }
+            else if (_esponente == 0)
             {
                 return 1;
-            } else if (_base == 0)
+            }
+            else if (_base == 0)
             {
                 return 0;
-            } else if (_esponente == 1)
+            }
+            else if (_esponente == 1)
             {
                 return _base;
             }

@@ -86,6 +86,8 @@ namespace charp_calcolatrice
             Console.WriteLine(CalcoliHelper.Potenza(a, 0));
             Console.WriteLine(Prettifier($"Potenza di {0} e {b}"));
             Console.WriteLine(CalcoliHelper.Potenza(0, b));
+            Console.WriteLine(Prettifier($"Potenza di {0} e {e}"));
+            Console.WriteLine(CalcoliHelper.Potenza(0, e));
             Console.WriteLine(Prettifier($"Potenza di {0} e {0}"));
             Console.WriteLine(CalcoliHelper.Potenza(0, 0));
         }
